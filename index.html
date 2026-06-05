@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- === OPTIMASI SEO & META TAGS === -->
+    <title>Magic Ink Studios - Indie 2D Animation Studio</title>
+    <meta name="description" content="Magic Ink Studios adalah studio animasi 2D indie modern yang menghadirkan pembuatan animasi berkualitas tinggi, konsep visual kreatif, dan kekayaan intelektual (IP) orisinal untuk klien global.">
+    <meta name="keywords" content="Magic Ink Studio, Magic Ink Animation, studio animasi 2D, indie animation studio, 2D animation Indonesia, pembuatan animasi, original IP, character design, storyboarding, Fikri Haikal Winarko">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Fikri Haikal Winarko">
+    
+    <!-- Open Graph / Facebook / LinkedIn (Untuk SEO Media Sosial) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Magic Ink Studios - Indie 2D Animation Studio">
+    <meta property="og:description" content="Membawa sketsa tinta digital menjadi hidup dengan animasi 2D berkualitas tinggi, dinamis, dan penuh energi.">
+    <meta property="og:image" content="BRAND LOGOS/MAGIC_INK_LOGOS.png">
+    <meta property="og:url" content="https://www.linkedin.com/company/magic-ink-studio/">
+
+    <!-- Twitter SEO -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Magic Ink Studios - Indie 2D Animation Studio">
+    <meta property="twitter:description" content="Membawa sketsa tinta digital menjadi hidup dengan animasi 2D berkualitas tinggi.">
+    <meta property="twitter:image" content="BRAND LOGOS/MAGIC_INK_LOGOS.png">
+
+    <!-- Google Structured Data / JSON-LD Schema (Sangat Penting untuk SEO Google) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EntertainmentBusiness",
+      "name": "Magic Ink Studio",
+      "alternateName": "Magic Ink Animation",
+      "url": "https://www.linkedin.com/company/magic-ink-studio/",
+      "logo": "BRAND LOGOS/MAGIC_INK_LOGOS.png",
+      "description": "Magic Ink Studios adalah studio animasi 2D indie modern yang memadukan estetika bersih dengan kreativitas dinamis berkualitas internasional.",
+      "sameAs": [
+        "https://www.instagram.com/magic_ink_animation",
+        "https://www.youtube.com/@MagicInkStudio026",
+        "https://www.linkedin.com/company/magic-ink-studio/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+62895370044764",
+        "contactType": "customer service",
+        "email": "inkmagic.production@gmail.com"
+      }
+    }
+    </script>
+    
+    <!-- 1. LOGO DI BARIS TITLE / TAB BROWSER (FAVICON) -->
+    <link rel="icon" type="image/png" href="BRAND LOGOS/MAGIC_INK_LOGOS.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Custom Styles (Telah Digabung & Dibersihkan) -->
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        /* Fresh Bright Green Glow Effect */
+        .green-glow {
+            box-shadow: 0 10px 35px -5px rgba(163, 230, 53, 0.6);
+        }
+        .green-glow-sm {
+            box-shadow: 0 4px 20px -2px rgba(163, 230, 53, 0.4);
+        }
+        /* Float Animation */
+        @keyframes floatAnimation {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-12px); } /* Naik 12 pixel */
+            100% { transform: translateY(0px); }
+        }
+        .efek-melayang {
+            animation: floatAnimation 4s ease-in-out infinite; /* Muter terus tanpa henti */
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 antialiased selection:bg-lime-400 selection:text-gray-900">
+
+    <!-- 1. NAVIGATION BAR -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Brand Logo Pojok Kiri Atas & Sosial Media Mini (Fixed Responsive Layout) -->
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 efek-melayang bg-lime-400 rounded-xl flex items-center justify-center border border-lime-300 overflow-hidden green-glow-sm flex-shrink-0">
+                    <!-- 2. LOGO DI POJOK KIRI ATAS NAVBAR -->
+                    <img src="BRAND LOGOS/MAGIC_INK_LOGOS.png" alt="Magic Ink Studio Logo" class="w-full h-full object-cover">
+                </div>
+                <div class="flex flex-col">
+                    <span class="heading-font font-bold text-base sm:text-xl tracking-wider text-gray-900 leading-tight">
+                        MAGIC INK <span class="text-lime-500">STUDIO</span>
+                    </span> 
+                    <div class="flex space-x-3 text-sm text-gray-400 mt-0.5">
+                        <a href="mailto:inkmagic.production@gmail.com" class="hover:text-lime-500 transition-colors" title="inkmagic.production@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/company/magic-ink-studio/" class="hover:text-lime-500 transition-colors" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/62895370044764" target="_blank" class="hover:text-lime-500 transition-colors" title="Hubungi via WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex space-x-8 text-xs font-bold tracking-widest text-gray-500">
+                <a href="#about" class="inline-block hover:-translate-y-1 transition-all duration-300 hover:text-lime-600 uppercase">About Us</a>
+                <a href="#showreel" class="inline-block hover:-translate-y-1 transition-all duration-300 hover:text-lime-600 uppercase">Showreel</a>
+                <a href="#ip-projects" class="inline-block hover:-translate-y-1 transition-all duration-300 hover:text-lime-600 uppercase">IPs</a>
+                <a href="#services" class="inline-block hover:-translate-y-1 transition-all duration-300 hover:text-lime-600 uppercase">Services</a>
+                <a href="#join" class="inline-block hover:-translate-y-1 transition-all duration-300 hover:text-lime-600 uppercase">Careers</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="hidden md:block">
+                <a href="#join" class="inline-flex items-center justify-center px-6 py-3 text-xs font-bold tracking-wider text-gray-900 bg-lime-400 hover:bg-lime-500 rounded-xl transition-all green-glow">
+                    Start Our Journey
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION (Responsive Font Sizes) -->
+    <section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-lime-100/40 via-white to-white py-16">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[500px] bg-lime-400/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-8">
+            <div class="inline-flex items-center space-x-2 bg-lime-100 border border-lime-300 rounded-full px-4 py-1.5 text-xs text-lime-800 font-bold uppercase tracking-wider">
+                <span class="flex h-2.5 w-2.5 rounded-full bg-lime-500 animate-pulse"></span>
+                <span> Dynamic 2D Animation Production</span>
+            </div>
+
+            <h1 class="heading-font text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-gray-900 max-w-5xl mx-auto leading-tight">
+                A New Concept Turned Into <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-lime-500 to-emerald-500 drop-shadow-sm">
+                    Stunning Animation.
+                </span>
+            </h1>
+
+            <p class="text-gray-600 text-sm sm:text-xl max-w-2xl mx-auto leading-relaxed">
+                <strong class="text-gray-900">Magic Ink Studios</strong> We are a modern 2D animation studio blending sleek, clean aesthetics with vibrant, high-energy creativity. Let’s collaborate to elevate your brand and bring your characters to life through unforgettable storytelling.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 pt-4">
+                <a href="#showreel" class="w-full sm:w-auto px-8 py-4 bg-gray-900 text-white hover:bg-gray-800 font-bold rounded-xl transition-all text-center tracking-wide green-glow-sm">
+                     Watch our Showreel <i class="fas fa-play ml-2 text-lime-400"></i>
+                </a>
+                <a href="#about" class="w-full sm:w-auto px-8 py-4 bg-white text-gray-700 hover:bg-gray-50 font-bold rounded-xl border-2 border-gray-200 transition-all text-center tracking-wide">
+                    Learn More About Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. TENTANG STUDIO (ABOUT SECTION - Fully Mobile Responsive) -->
+    <section id="about" class="py-24 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Kolom Kiri: Tempat Logo Besar Studio -->
+                <div class="relative group">
+                    <div class="absolute inset-0 bg-lime-400 rounded-3xl blur-2xl opacity-30 group-hover:opacity-40 transition-opacity"></div>
+                    <div class="relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-8 sm:p-12 text-center border border-gray-700 min-h-[350px] flex flex-col justify-center items-center">
+                        <!-- 3. LOGO VERSI BESAR DI DALAM SECTION ABOUT -->
+                        <img src="BRAND LOGOS/MAGIC_INK_LOGOS.png" alt="Magic Ink Studio Official Logo" class="w-36 h-36 sm:w-44 sm:h-44 object-contain mb-4">
+                        <h3 class="heading-font text-xl sm:text-2xl font-bold text-white tracking-wide mt-2">MAGIC INK STUDIO</h3>
+                        <p class="text-lime-300 text-[10px] sm:text-xs tracking-widest uppercase mt-1">Where Imagination Knows No Limits</p>
+                    </div>
+                </div>
+
+                <!-- Kolom Kanan: Teks Konten -->
+                <div class="space-y-6">
+                    <div class="inline-block bg-lime-100 text-lime-800 text-xs font-extrabold uppercase px-3 py-1 rounded-md">
+                        About Us
+                    </div>
+                    <h2 class="heading-font text-2xl sm:text-4xl font-bold text-gray-900 tracking-tight">
+                        Bringing Digital Ink Sketches to Life.
+                    </h2>
+                    <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
+                        Driven by a passion for relentless innovation, <strong>Magic Ink Studios</strong> is a premier 2D animation powerhouse dedicated to crafting fresh, dynamic, and high-impact visual stories. We believe that every groundbreaking idea deserves an extraordinary canvas.
+                    </p>
+                    <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
+                        Backed by a world-class team of professional animators, visionary character designers, and master storytellers, we deliver top-tier animated series, commercial ads, music videos, and industry-standard game assets for a global clientele.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 bg-lime-50 rounded-xl border border-lime-200">
+                            <h4 class="heading-font font-bold text-lg sm:text-xl text-gray-900">100% Fresh</h4>
+                            <p class="text-gray-500 text-xs mt-1">Original & contemporary concepts.</p>
+                        </div>
+                        <div class="p-4 bg-lime-50 rounded-xl border border-lime-200">
+                            <h4 class="heading-font font-bold text-lg sm:text-xl text-gray-900">Quality</h4>
+                            <p class="text-gray-500 text-xs mt-1">A High-precision, fluid animation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. VIDEO SHOWREEL SECTION -->
+    <section id="showreel" class="py-24 bg-gray-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(132,204,22,0.15),transparent_60%)]"></div>
+        
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-8">
+            <div class="space-y-3">
+                <div class="inline-block bg-lime-400 text-gray-900 text-xs font-extrabold uppercase px-3 py-1 rounded-md">
+                    Studio Showreel
+                </div>
+                <h2 class="heading-font text-2xl sm:text-5xl font-bold tracking-tight">Our Best Work Compilation</h2>
+                <p class="text-gray-400 text-xs sm:text-sm max-w-xl mx-auto">
+                    Take a sneak peek into a world of dynamic motion, striking visuals, and the pure storytelling magic crafted by Magic Ink Studio.
+                </p>
+            </div>
+
+            <!-- Kontainer Video Player (YouTube Embed) -->
+            <div class="w-full max-w-4xl mx-auto rounded-2xl overflow-hidden bg-black border-4 border-lime-400/30 shadow-2xl green-glow">
+                <div class="aspect-video w-full h-full relative">
+                    <iframe class="w-full h-full absolute inset-0" src="https://drive.google.com/file/d/137g4c1zCdNB_rAAPYHGKmQRwz1jUBCdA/preview" title="Magic Ink Works" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. LIST 3 PROJECT IP DENGAN VIDEO LOKAL PC -->
+    <section id="ip-projects" class="py-24 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="text-center space-y-3 mb-16">
+                <div class="inline-block bg-lime-100 text-lime-800 text-xs font-extrabold uppercase px-3 py-1 rounded-md">
+                    Our Intellectual Property
+                </div>
+                <h2 class="heading-font text-2xl sm:text-4xl font-bold text-gray-900 tracking-tight">
+                    Magic Ink Original IPs
+                </h2>
+                <p class="text-gray-600 text-xs sm:text-sm max-w-xl mx-auto">
+                    A collection of original intellectual property (IP) projects that we are developing and producing independently.
+                </p>
+            </div>
+
+            <!-- IP Cards Grid (Responsive Grid Layout) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- KARTU IP 1 -->
+                <div class="bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 transition-all duration-500 hover:-translate-y-3 hover:scale-[1.01] hover:border-lime-400 hover:shadow-2xl hover:shadow-lime-400/20 group shadow-sm flex flex-col justify-between">
+                    <div>
+                        <!-- Container Video Lokal IP 1 -->
+                        <div class="aspect-video w-full bg-gray-900 relative overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/40 to-transparent z-10 pointer-events-none"></div>
+                            <video class="w-full h-full object-cover" autoplay loop muted playsinline>
+                                <source src="IPS/XN.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <span class="absolute top-4 right-4 z-20 bg-lime-400 text-gray-900 text-[10px] font-extrabold uppercase px-2 py-1 rounded-md tracking-wider">
+                                In Production
+                            </span>
+                        </div>
+                        
+                        <!-- Konten IP 1 -->
+                        <div class="p-6 space-y-3">
+                            <h3 class="heading-font text-xl font-bold text-gray-900 group-hover:text-lime-600 transition-colors">
+                                Felseth
+                            </h3>
+                            <p class="text-gray-600 text-xs leading-relaxed">
+                                A creature that emerged from a post-nuclear war laboratory, a combination of human and animal DNA.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-gray-100/60 flex items-center justify-between text-[11px] font-bold text-gray-400">
+                        <span><i class="fas fa-layer-group mr-1.5 text-lime-500"></i> Trailer</span>
+                        <span>Target: On Hold</span>
+                    </div>
+                </div>
+
+                <!-- KARTU IP 2 -->
+                <div class="bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 transition-all duration-500 hover:-translate-y-3 hover:scale-[1.01] hover:border-lime-400 hover:shadow-2xl hover:shadow-lime-400/20 group shadow-sm flex flex-col justify-between">
+                    <div>
+                        <!-- Container Video Lokal IP 2 -->
+                        <div class="aspect-video w-full bg-gray-900 relative overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/40 to-transparent z-10 pointer-events-none"></div>
+                            <video class="w-full h-full object-cover" autoplay loop muted playsinline>
+                                <source src="IPS/VS.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <span class="absolute top-4 right-4 z-20 bg-amber-400 text-gray-900 text-[10px] font-extrabold uppercase px-2 py-1 rounded-md tracking-wider">
+                                Pre-Production
+                            </span>
+                        </div>
+                        
+                        <!-- Konten IP 2 -->
+                        <div class="p-6 space-y-3">
+                            <h3 class="heading-font text-xl font-bold text-gray-900 group-hover:text-lime-600 transition-colors">
+                                Vaslord
+                            </h3>
+                            <p class="text-gray-600 text-xs leading-relaxed">
+                                The Demon King who was born with negative human emotions
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-gray-100/60 flex items-center justify-between text-[11px] font-bold text-gray-400">
+                        <span><i class="fas fa-clapperboard mr-1.5 text-lime-500"></i> Short Movie</span>
+                        <span>Target: 2027</span>
+                    </div>
+                </div>
+
+                <!-- KARTU IP 3 -->
+                <div class="bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 transition-all duration-500 hover:-translate-y-3 hover:scale-[1.01] hover:border-lime-400 hover:shadow-2xl hover:shadow-lime-400/20 group shadow-sm flex flex-col justify-between">
+                    <div>
+                        <!-- Container Video Lokal IP 3 -->
+                        <div class="aspect-video w-full bg-gray-900 relative overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/40 to-transparent z-10 pointer-events-none"></div>
+                            <video class="w-full h-full object-cover" autoplay loop muted playsinline>
+                                <source src="IPS/DN.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <span class="absolute top-4 right-4 z-20 bg-blue-400 text-white text-[10px] font-extrabold uppercase px-2 py-1 rounded-md tracking-wider">
+                                Concept Phase
+                            </span>
+                        </div>
+                        
+                        <!-- Konten IP 3 -->
+                        <div class="p-6 space-y-3">
+                            <h3 class="heading-font text-xl font-bold text-gray-900 group-hover:text-lime-600 transition-colors">
+                                Project IP Prahara
+                            </h3>
+                            <p class="text-gray-600 text-xs leading-relaxed">
+                                Concept reveal: Prahara. His name means chaos and conflict, born from the pain of injustice. The idea is that he’s born from human resentment and the curse of power abuse. We designed him as a darknight because it feels like modern leaders are 'pissing' on the graves of our ancestors with their corruption.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-gray-100/60 flex items-center justify-between text-[11px] font-bold text-gray-400">
+                        <span><i class="fas fa-book-open mr-1.5 text-lime-500"></i> Webcomic / IP</span>
+                        <span>Target: TBD</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. SERVICES SECTION -->
+    <section id="services" class="py-24 bg-gray-50 relative border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+                
+                <!-- Section Intro Heading -->
+                <div class="space-y-4 lg:col-span-1">
+                    <div class="w-12 h-12 bg-lime-400 text-gray-900 rounded-xl flex items-center justify-center text-xl font-bold green-glow-sm">
+                        <i class="fas fa-cubes"></i>
+                    </div>
+                    <h2 class="heading-font text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">Our Main Services</h2>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                        From the first digital ink stroke to the final animated masterpiece, we maintain the highest production standards for cleanliness, precision, and creativity.
+                    </p>
+                </div>
+
+                <!-- Grid Cards -->
+                <div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <!-- Card 1 -->
+                    <div class="p-8 bg-white rounded-2xl border-2 border-transparent hover:border-lime-400 transition-all group shadow-sm">
+                        <div class="w-12 h-12 bg-lime-100 rounded-xl flex items-center justify-center text-lime-600 mb-6 group-hover:scale-110 group-hover:bg-lime-400 group-hover:text-gray-900 transition-all">
+                            <i class="fas fa-compass text-lg"></i>
+                        </div>
+                        <h3 class="heading-font text-lg font-bold text-gray-900 mb-2">Creative Pre-Production</h3>
+                        <p class="text-gray-600 text-xs leading-relaxed">Crafting comprehensive visual concepts, designing iconic characters, and developing meticulous storyboards to lay a solid foundation before production begins.</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="p-8 bg-white rounded-2xl border-2 border-transparent hover:border-lime-400 transition-all group shadow-sm">
+                        <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-emerald-600 mb-6 group-hover:scale-110 group-hover:bg-lime-400 group-hover:text-gray-900 transition-all">
+                            <i class="fas fa-wand-magic-sparkles text-lg"></i>
+                        </div>
+                        <h3 class="heading-font text-lg font-bold text-gray-900 mb-2">High-End 2D Animation</h3>
+                        <p class="text-gray-600 text-xs leading-relaxed">Executing traditional *frame-by-frame* animation techniques as well as modern *vector rigging* methods with dynamic, expressive movements that meet international standards.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. JOIN TEAM SECTION -->
+    <section id="join" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-lime-100/60 to-emerald-50 rounded-3xl p-8 sm:p-12 border-2 border-lime-300 text-center space-y-6 relative overflow-hidden green-glow">
+            <div class="relative z-10">
+                <h2 class="heading-font text-2xl sm:text-4xl font-bold text-gray-900">Develop Your Creative Skills With Us</h2>
+                <p class="text-gray-600 text-xs sm:text-sm max-w-xl mx-auto leading-relaxed mt-2">
+                    We are always looking for talented creators, from *illustrators*, *2D animators*, to *production managers* who are passionate about creating revolutionary works.
+                </p>
+                <div class="pt-6">
+                    <a href="https://forms.gle/kaMWivAczrcP3wmR6" class="inline-block hover:-translate-y-1 transition-all duration-300 inline-flex items-center space-x-3 bg-gray-900 hover:bg-gray-800 text-white text-xs font-bold tracking-widest px-8 py-4 rounded-xl transition-colors uppercase green-glow-sm">
+                        <span>Send Your Portfolio</span>
+                        <i class="fas fa-arrow-right text-lime-400"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FOOTER -->
+    <footer class="bg-gray-50 py-12 text-xs text-gray-500 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-6">
+            <div class="text-center sm:text-left">
+                <p class="heading-font font-bold text-gray-900 text-sm tracking-wide">MAGIC INK STUDIO.</p>
+                <p class="mt-1">&copy; 2026. Magic Ink Animation Studio.</p>
+                <p class="mt-1">Fikri Haikal Winarko.</p>
+            </div>
+            <!-- Social Icons -->
+            <div class="flex space-x-6 text-lg text-gray-400">
+                <a href="https://www.instagram.com/magic_ink_animation?igsh=Y24wbGcyM3RhNTVs" class="inline-block hover:-translate-y-1 transition-all duration-300 hover:text-lime-500"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@MagicInkStudio026" class="inline-block hover:-translate-y-1 transition-all duration-300 hover:text-lime-500"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/company/magic-ink-studio/" class="inline-block hover:-translate-y-1 transition-all duration-300 hover:text-lime-500"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:inkmagic.production@gmail.com" class="inline-block hover:-translate-y-1 transition-all duration-300 hover:text-lime-500" title="inkmagic.production@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
